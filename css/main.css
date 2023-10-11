@@ -91,6 +91,7 @@ legend {
 body {
   font-family: Popins, sans-serif;
   font-size: 16px;
+  color: #323232;
 }
 
 .container {
@@ -150,4 +151,114 @@ body {
 .navigation-list a.active {
   color: #F78434;
   font-weight: 700;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__text {
+  width: 465px;
+}
+
+.header__title {
+  margin-right: -160px;
+  position: relative;
+  z-index: 9;
+  margin-bottom: 25px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.46;
+}
+
+.header__text p {
+  line-height: 1, 6875;
+  margin-bottom: 1em;
+}
+
+.form {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+  border-radius: 29px;
+  height: 58px;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+  transition: -webkit-box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
+}
+.form--active {
+  -webkit-box-shadow: 0px 17px 42px rgba(247, 132, 52, 0.27);
+          box-shadow: 0px 17px 42px rgba(247, 132, 52, 0.27);
+}
+
+.form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding-left: 72px;
+  position: relative;
+}
+.form__label::before {
+  content: "";
+  display: block;
+  background-image: url("/img/icons/email.svg");
+  width: 24px;
+  height: 19px;
+  position: absolute;
+  left: 28px;
+  top: 20px;
+}
+
+.form__input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 10px;
+}
+.form__input::-webkit-input-placeholder {
+  color: #BBBBBB;
+}
+.form__input::-moz-placeholder {
+  color: #BBBBBB;
+}
+.form__input:-ms-input-placeholder {
+  color: #BBBBBB;
+}
+.form__input::-ms-input-placeholder {
+  color: #BBBBBB;
+}
+.form__input::placeholder {
+  color: #BBBBBB;
+}
+
+.button {
+  display: inline-block;
+  height: 58px;
+  color: #fff;
+  background-color: #F78434;
+  padding: 0 37px;
+  border-radius: 29px;
+  font-weight: 700;
+  line-height: 58px;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+.button:hover {
+  background-color: #ff6a00;
 }
