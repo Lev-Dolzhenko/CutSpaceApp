@@ -2,6 +2,7 @@ body {
     font-family: Popins, sans-serif;
     font-size: 16px;
     color: #323232;
+    line-height: 1.6875;
 }
 
 .container {
@@ -10,4 +11,19 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+
+    &--fluid {
+        max-width: unset;
+        width: 100%;
+    }
+
+    &--no-padding {
+        padding: 0;
+    }
 }
+
+.none {
+    display: none;
+}
+
