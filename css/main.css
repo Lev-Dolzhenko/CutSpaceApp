@@ -282,6 +282,16 @@ body {
 .button:hover {
   background-color: #ff6a00;
 }
+.button--white {
+  background-color: #fff;
+  color: #323232;
+  -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.button--white:hover {
+  background-color: #323232;
+  color: #fff;
+}
 
 .objects {
   margin-top: 115px;
@@ -323,7 +333,9 @@ body {
 .objects__text {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  max-width: 693px;
+  width: 374px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   padding-left: 181px;
   padding-right: 150px;
 }
@@ -386,4 +398,54 @@ body {
 
 .card-info__title {
   font-weight: 700;
+}
+
+.cta {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.cta__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #58BEBF;
+  color: #fff;
+  border-radius: 20px;
+  padding-right: 95px;
+}
+
+.cta__img {
+  margin-top: 60px;
+  padding-top: 25px;
+  padding-right: 25px;
+  background-color: #fff;
+  border-radius: 0 20px 0 0;
+}
+
+.cta__text {
+  width: 364px;
+}
+.cta__text p {
+  width: 320px;
+  margin-bottom: 30px;
+}
+
+.cta__title {
+  margin-bottom: 15px;
+}
+
+.cta__buttons-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }

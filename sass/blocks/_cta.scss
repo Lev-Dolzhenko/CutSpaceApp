@@ -1,0 +1,40 @@
+.cta {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.cta__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #58BEBF;
+    color: #fff;
+
+    border-radius: 20px;
+    padding-right: 95px;
+}
+
+.cta__img {
+    margin-top: 60px;
+    padding-top: 25px;
+    padding-right: 25px;
+    background-color: #fff;
+    border-radius: 0 20px 0 0;
+}
+.cta__text {
+    width: 364px;
+
+    p {
+        width: 320px;
+        margin-bottom: 30px;
+    }
+}
+.cta__title {
+    margin-bottom: 15px;
+}
+
+.cta__buttons-row {
+   display: flex;
+   column-gap: 20px;
+}

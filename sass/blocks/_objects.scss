@@ -22,7 +22,8 @@
 
 .objects__text {
     flex-shrink: 0;
-    max-width: 693px;
+    width: 374px;
+    box-sizing: content-box;
     padding-left: 181px;
     padding-right: 150px;
 
