@@ -23,4 +23,24 @@
             color: #fff;
         }
     }
+
+    &--play {
+        padding-left: 50px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            left:30px;
+            content: "";
+            display: block;
+            width: 12px;
+            height: 12px;
+
+            background-image: url('/img/icons/play.svg');
+            background-repeat: no-repeat;
+            background-size: initial;
+        }
+    }
 }

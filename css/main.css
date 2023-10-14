@@ -292,6 +292,24 @@ body {
   background-color: #323232;
   color: #fff;
 }
+.button--play {
+  padding-left: 50px;
+  position: relative;
+}
+.button--play::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 30px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url("/img/icons/play.svg");
+  background-repeat: no-repeat;
+  background-size: initial;
+}
 
 .objects {
   margin-top: 115px;
@@ -341,6 +359,9 @@ body {
 }
 .objects__text + .objects__text {
   margin-top: 20px;
+}
+.objects__text a {
+  color: #fff;
 }
 
 .objects__title {
