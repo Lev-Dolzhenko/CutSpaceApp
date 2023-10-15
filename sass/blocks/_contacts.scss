@@ -1,0 +1,50 @@
+.contacs {
+    position: relative;
+
+    padding-top: 200px;
+    padding-bottom: 55px;
+
+    background-image: url('/img/footer/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.contacs::before {
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    content: "";
+    display: block;
+    width: 743px;
+    height: 372px;
+    background-image: url('/img/footer/footer-oval.svg');
+    background-size: initial;
+}
+
+.contacs::after {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 475px;
+    height: 547px;
+    margin-left: 79px;
+    background-image: url('/img/footer/girl.png');
+    background-size: initial;
+}
+
+.contact-info__titel {
+    margin-bottom: 15px;
+    color: #fff;
+    max-width: 359px;
+}
+.title {
+}
+.contact-info__subtitle {
+    margin-bottom: 30px;
+    color: #fff;
+    max-width: 342px;
+}
