@@ -612,3 +612,132 @@ body {
   margin-bottom: 2px;
   font-style: 28px;
 }
+
+.testimonails {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.testimonails__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 58px;
+}
+
+.testimonials__title {
+  max-width: 453px;
+}
+
+.testimonails__subtitle {
+  max-width: 398px;
+}
+
+.testimonials__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  position: relative;
+}
+
+.testimonials__row::after {
+  content: "";
+  top: -40px;
+  right: -40px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-image: url("/img/testimonials/design-element.svg");
+  background-repeat: no-repeat;
+}
+
+.testimonials__item {
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 350px;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+  transition: -webkit-box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
+}
+.testimonials__item:hover {
+  -webkit-box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.08);
+}
+.testimonials__item:hover .testimonials__item-button {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+.testimonials__item:hover .testimonials__item-city {
+  color: #F78434;
+}
+
+.testimonials__item-wrapper {
+  margin-top: 0;
+  position: relative;
+}
+
+.testimonials__item-img {
+  margin-top: -27px;
+}
+
+.testimonials__item-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  transition: opacity 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+.testimonials__item-button circle {
+  fill: #fff;
+  -webkit-transition: fill 0.2s ease-in;
+  transition: fill 0.2s ease-in;
+}
+.testimonials__item-button path {
+  fill: #F78434;
+  -webkit-transition: fill 0.2s ease-in;
+  transition: fill 0.2s ease-in;
+}
+.testimonials__item-button:hover circle {
+  fill: #F78434;
+}
+.testimonials__item-button:hover path {
+  fill: #fff;
+}
+
+.testimonial__item-body {
+  padding: 30px;
+}
+
+.testimonials__item-description {
+  margin-bottom: 23px;
+}
+
+.testimonials__item-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.testimonials__item-city {
+  color: #58BEBF;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
